@@ -14,7 +14,7 @@ public class GameApplication {
 		JFrame gameFrame = new JFrame("Game Frame");
 		
 		// set size
-		gameFrame.setSize( 2000, 2000 );
+		gameFrame.setSize( 800, 800 );
 
 		//call gameController to play game
     gameFrame.add( new GameController());
