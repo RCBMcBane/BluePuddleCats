@@ -16,7 +16,8 @@ import org.xml.sax.SAXException;
  * WordLibrary class reads words from external file and can generate a random word from the file
  * 
  * @author BluePuddleCat
- * @version 11/2/18 Written for HackHolyoke 2018
+ * @version 11/3/18 
+ * Written for HackHolyoke 2018
  *
  */
 public class Library {
