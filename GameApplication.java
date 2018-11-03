@@ -9,10 +9,10 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JFrame;
 
 /**
- * Main method for LearningGame
+ * Main method for BluePuddleCat Education Game
  * 
  * @author BluePuddleCats
- * @version 11.2.18
+ * @version 11.3.18
  */
 public class GameApplication {
 	/**
