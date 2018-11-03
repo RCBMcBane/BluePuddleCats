@@ -193,15 +193,21 @@ public class GameController extends JPanel implements ActionListener {
 		add(skipEndPane,BorderLayout.SOUTH);
 	}
 
-	private void endGame() {
+/**
+	 * end game and display final score
+	 * 
+	 * @return true if score is more than half attempted names
+	 */
+	private boolean endGame() {
 		removeAll();
 		String finalScore = "Your Final Score is " + logic.getScore() + " / " + logic.getTimesAttempted();
-		JLabel finalScoreLabel = new JLabel(finalScore,  SwingConstants.CENTER);
+		JLabel finalScoreLabel = new JLabel(finalScore, SwingConstants.CENTER);
 		finalScoreLabel.setFont(commentFont);
 		add(finalScoreLabel, BorderLayout.CENTER);
 		revalidate();
+		return (logic.getScore() >= logic.getTimesAttempted() / 2);
 	}
-	
+
 	/**
 	 * play sound effect for buttons
 	 */
