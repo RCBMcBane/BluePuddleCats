@@ -30,7 +30,7 @@ public class GameController extends JPanel implements ActionListener {
 	Font font = new Font("Comic Sans MS", Font.BOLD, 30);
 	Font commentFont = new Font("Comic Sans MS", Font.BOLD, 24);
 	Font instructionFont = new Font("Comic Sans MS", Font.BOLD, 14);
-	Color background = new Color(235, 235, 194);
+	Color background = new Color(175, 206, 250);
 
 	/**
 	 * constructor
@@ -94,7 +94,7 @@ public class GameController extends JPanel implements ActionListener {
 		}
 		catgry1.setBackground(new Color(172, 236, 169));
 		catgry2.setBackground(new Color(255, 200, 200));
-		catgry3.setBackground(new Color(175, 206, 250));
+		catgry3.setBackground(new Color(235, 235, 194));
 		catgry1.setFont(font);
 		catgry2.setFont(font);
 		catgry3.setFont(font);
@@ -164,7 +164,7 @@ public class GameController extends JPanel implements ActionListener {
 		//skip button
 		JButton skip = new JButton("Skip");
 		skip.setFont(font);
-		skip.setBackground(new Color(175, 206, 250));
+		skip.setBackground(new Color(235, 235, 194));
 		skip.addActionListener(this);
 		//end button
 		JButton end = new JButton("End");
@@ -225,4 +225,3 @@ public class GameController extends JPanel implements ActionListener {
 		}
 	}
 }
-
