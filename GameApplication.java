@@ -16,8 +16,8 @@ import javax.swing.JFrame;
  */
 public class GameApplication {
 	/**
-	 * create the JFrame in which the game will be played initiate game play by
-	 * calling GameController
+	 * Create the JFrame in which the game will be played. 
+	 * Initiate game play by calling GameController.
 	 */
 	public static void main(String[] args) {
 		// create a new JFrame to display the game
