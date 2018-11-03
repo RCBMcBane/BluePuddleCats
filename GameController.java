@@ -26,7 +26,8 @@ public class GameController extends JPanel implements ActionListener{
 	 * constructor
 	 */
 	public GameController() {
-		//constructor for game controller
+		logic = new GameLogic();
+		createView();
 	}
 	/**
 	 * createView method creates all the elements
