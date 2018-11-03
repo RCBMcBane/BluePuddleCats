@@ -28,7 +28,7 @@ public class GameController extends JPanel implements ActionListener {
 	private JButton catgry1, catgry2, catgry3;
 	private boolean correct;
 	Font font = new Font("Comic Sans MS", Font.BOLD, 30);
-	Font commentFont = new Font("Comic Sans MS", Font.BOLD, 20);
+	Font commentFont = new Font("Comic Sans MS", Font.BOLD, 24);
 	Font instructionFont = new Font("Comic Sans MS", Font.BOLD, 14);
 	Color background = new Color(235, 235, 194);
 
