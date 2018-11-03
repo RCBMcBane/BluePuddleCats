@@ -16,8 +16,7 @@ import org.xml.sax.SAXException;
  * WordLibrary class reads words from external file and can generate random word
  * 
  * @author BluePuddleCat
- * @version 11/2/18 
- * Written for HackHolyoke 2018
+ * @version 11/2/18 Written for HackHolyoke 2018
  *
  */
 public class WordLibrary {
@@ -65,36 +64,45 @@ public class WordLibrary {
 	 *            node in file
 	 */
 	private void parseNode(Node node) {
-		// check if node is an element
-		if (node.getNodeType() == Node.ELEMENT_NODE) {
-			// rename element node
-			Element currentElt = (Element) node;
-			// create Word object
-			Word newWord = new Word();
-			// check for attribute of the element
-			if (currentElt.hasAttribute("noun"))
-				// set word category
-				newWord.setCategory("Noun");
-			else if (currentElt.hasAttribute("verb"))
-				// set word category
-				newWord.setCategory("Verb");
-			else if (currentElt.hasAttribute("adjective"))
-				// set word category
-				newWord.setCategory("Adjective");
-			String nodeName = node.getNodeName();
-			// only print out name, college and year
-			if (nodeName.equals("name")) {
-				// store name in word
-				newWord.setData(node.getTextContent());
-			}
-			library.add(newWord);
-		}
 
-		// recursively go through all nodes, including their childNodes
-		if (node.hasChildNodes()) {
-			NodeList nodeList = node.getChildNodes();
-			for (int i = 0; i < nodeList.getLength(); i++) {
-				parseNode(nodeList.item(i));
+		if (node.getNodeType() == Node.ELEMENT_NODE) {
+			if (node.getNodeName().equals("word_library") && node.hasChildNodes()) {
+				// for loop through all first-child nodes
+				NodeList nodeList = node.getChildNodes();
+				for (int i = 0; i < nodeList.getLength(); i++) {
+					Node firstChildNode = nodeList.item(i);
+					// check if child node is an element
+					if (firstChildNode.getNodeType() == Node.ELEMENT_NODE) {
+						// rename element node
+						Element currentElt = (Element) firstChildNode;
+						// check if the node is word
+						String nodeName = firstChildNode.getNodeName();
+						if (nodeName.equals("word") && firstChildNode.hasChildNodes()) {
+							Word newWord = new Word();
+							if (currentElt.getAttribute("category").equals("noun"))
+								newWord.setCategory("Noun");
+							else if (currentElt.getAttribute("category").equals("verb"))
+								newWord.setCategory("Verb");
+							else if (currentElt.getAttribute("category").equals("adjective"))
+								newWord.setCategory("Adjective");
+
+							// for loop through second-child nodes
+							NodeList nodeList2 = firstChildNode.getChildNodes();
+							for (int j = 0; j < nodeList2.getLength(); j++) {
+								Node secondChildNode = nodeList2.item(j);
+								// check if child node is an element
+								if (secondChildNode.getNodeType() == Node.ELEMENT_NODE) {
+									// check if the node is name
+									String nodeName2 = secondChildNode.getNodeName();
+									if (nodeName2.equals("name")) {
+										newWord.setData(secondChildNode.getTextContent());
+										library.add(newWord);
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -114,16 +122,25 @@ public class WordLibrary {
 	 * @return random word
 	 */
 	public Word getRandomWord() {
-		//check if the library is empty
+		// check if the library is empty
 		if (library.size() == 0) {
 			System.out.println("No available word in the library.");
 			return null;
-		} 
-		//if not empty
+		}
+		// if not empty
 		else {
 			int index = (int) ((library.size() - 1) * Math.random());
 			return library.get(index);
 		}
 	}
-	
+
+	/**
+	 * display every word in word library
+	 */
+	public String toString() {
+		String libraryToPrint = "";
+		for (int i = 0; i < library.size(); i++)
+			libraryToPrint += library.get(i).toString() + "\n";
+		return libraryToPrint;
+	}
 }
