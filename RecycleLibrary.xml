@@ -1,0 +1,139 @@
+<recycle_library>
+
+	<word category= "Trash">
+	<name>Plastic Bags</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Candy Wrapper</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Markers</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Styrofoam</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Crayons</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Beads</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Chip Bags</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Plastic Wrap</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Pizza Box</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Hair Bands</name>
+	</word>
+	
+	<word category= "Trash">
+	<name>Rubber Bands</name>
+	</word>
+	
+	//recycle 
+	
+	<word category= "Recycle">
+	<name>Plastic Bottle</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Plastic Cups</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Paper</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Cardboard</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Coke Cans</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Paper Cups</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Crumpled Paper</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Marker Picture</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Poster</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Paper Bags</name>
+	</word>
+	
+	<word category= "Recycle">
+	<name>Sprite Cans</name>
+	</word>
+	
+	//compost 
+	
+	<word category= "Compost">
+	<name>Apple</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Orange</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Lemon</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Bread</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Broccoli</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Chocolate</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Caramel</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Napkins</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Pineapple</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Candy</name>
+	</word>
+	
+	<word category= "Compost">
+	<name>Paper Towels</name>
+	</word>
+
+</recycle_library>

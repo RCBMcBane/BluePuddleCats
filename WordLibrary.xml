@@ -1,0 +1,383 @@
+<word_library>
+
+	//Nouns
+	<word category="Noun">
+		<name>Cat</name>
+	</word>
+
+	<word category="Noun">
+		<name>Dog</name>
+	</word>
+
+	<word category="Noun">
+		<name>Bird</name>
+	</word>
+
+	<word category="Noun">
+		<name>Car</name>
+	</word>
+
+	<word category="Noun">
+		<name>Truck</name>
+	</word>
+
+	<word category="Noun">
+		<name>Bus</name>
+	</word>
+
+	<word category="Noun">
+		<name>Train</name>
+	</word>
+	
+	<word category="Noun">
+		<name>Tiger</name>
+	</word>
+
+	<word category="Noun">
+		<name>Lion</name>
+	</word>
+
+	<word category="Noun">
+		<name>TV</name>
+	</word>
+
+	<word category="Noun">
+		<name>Phone</name>
+	</word>
+
+	<word category="Noun">
+		<name>Bottle</name>
+	</word>
+
+	<word category="Noun">
+		<name>Apple</name>
+	</word>
+
+	<word category="Noun">
+		<name>Lemon</name>
+	</word>
+
+	<word category="Noun">
+		<name>Pineapple</name>
+	</word>
+
+	<word category="Noun">
+		<name>Tree</name>
+	</word>
+
+	<word category="Noun">
+		<name>River</name>
+	</word>
+
+	<word category="Noun">
+		<name>Sea</name>
+	</word>
+
+	<word category="Noun">
+		<name>Sand</name>
+	</word>
+
+	<word category="Noun">
+		<name>Ring</name>
+	</word>
+
+	<word category="Noun">
+		<name>Sidewalk</name>
+	</word>
+
+	<word category="Noun">
+		<name>Teacher</name>
+	</word>
+
+	<word category="Noun">
+		<name>Table</name>
+	</word>
+
+	<word category="Noun">
+		<name>Plate</name>
+	</word>
+
+	<word category="Noun">
+		<name>Clock</name>
+	</word>
+
+	<word category="Noun">
+		<name>Hand</name>
+	</word>
+
+	<word category="Noun">
+		<name>Leg</name>
+	</word>
+
+	<word category="Noun">
+		<name>Arm</name>
+	</word>
+
+	<word category="Noun">
+		<name>Face</name>
+	</word>
+
+	<word category="Noun">
+		<name>Towel</name>
+	</word>
+
+	<word category="Noun">
+		<name>Cup</name>
+	</word>
+	//Verbs
+
+	<word category="Verb">
+		<name>Run</name>
+	</word>
+
+	<word category="Verb">
+		<name>Walk</name>
+	</word>
+
+	<word category="Verb">
+		<name>Swim</name>
+	</word>
+
+	<word category="Verb">
+		<name>Jump</name>
+	</word>
+
+	<word category="Verb">
+		<name>Slip</name>
+	</word>
+
+	<word category="Verb">
+		<name>Sit</name>
+	</word>
+
+	<word category="Verb">
+		<name>Talk</name>
+	</word>
+
+	<word category="Verb">
+		<name>Hop</name>
+	</word>
+
+	<word category="Verb">
+		<name>Sleep</name>
+	</word>
+
+	<word category="Verb">
+		<name>Shout</name>
+	</word>
+
+	<word category="Verb">
+		<name>Leap</name>
+	</word>
+	
+	<word category="Verb">
+		<name>Eat</name>
+	</word>
+
+	<word category="Verb">
+		<name>Play</name>
+	</word>
+
+	<word category="Verb">
+		<name>Steal</name>
+	</word>
+
+	<word category="Verb">
+		<name>Kick</name>
+	</word>
+
+	<word category="Verb">
+		<name>Move</name>
+	</word>
+
+	<word category="Verb">
+		<name>Dance</name>
+	</word>
+
+	<word category="Verb">
+		<name>Tap</name>
+	</word>
+
+	<word category="Verb">
+		<name>Laugh</name>
+	</word>
+
+	<word category="Verb">
+		<name>Roll</name>
+	</word>
+
+	<word category="Verb">
+		<name>Rub</name>
+	</word>
+
+	<word category="Verb">
+		<name>Bend</name>
+	</word>
+
+	<word category="Verb">
+		<name>Type</name>
+	</word>
+
+	<word category="Verb">
+		<name>Click</name>
+	</word>
+
+	<word category="Verb">
+		<name>Lick</name>
+	</word>
+
+	<word category="Verb">
+		<name>Wipe</name>
+	</word>
+
+	<word category="Verb">
+		<name>Push</name>
+	</word>
+
+	<word category="Verb">
+		<name>Shove</name>
+	</word>
+
+	<word category="Verb">
+		<name>Skip</name>
+	</word>
+
+	<word category="Verb">
+		<name>Hop</name>
+	</word>
+
+	<word category="Verb">
+		<name>Spin</name>
+	</word>
+
+	<word category="Verb">
+		<name>Wiggle</name>
+	</word>
+
+	//Adjectives
+
+	<word category="Adjective">
+		<name>Sweet</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Sour</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Spicy</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Nice</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Kind</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Mean</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Brave</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Calm</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Big</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Happy</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Mad</name>
+	</word>
+
+	<word category="adjective">
+		<name>Pretty</name>
+	</word>
+
+	<word category="adjective">
+		<name>Little</name>
+	</word>
+
+	<word category="adjective">
+		<name>Silly</name>
+	</word>
+
+	<word category="adjective">
+		<name>Fancy</name>
+	</word>
+
+	<word category="adjective">
+		<name>Clean</name>
+	</word>
+
+	<word category="adjective">
+		<name>Wet</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Hot</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Dry</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Yellow</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Blue</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Red</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Green</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Pink</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Black</name>
+	</word>
+
+	<word category="Adjective">
+		<name>White</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Cold</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Dirty</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Soft</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Hard</name>
+	</word>
+
+	<word category="Adjective">
+		<name>Gentle</name>
+	</word>
+
+</word_library>
