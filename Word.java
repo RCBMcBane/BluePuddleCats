@@ -1,9 +1,11 @@
 /**
- * @author BluePuddleCat
- * @version 11/2/18
- * Written for HackHolyoke 2018
+ * 
  * This class creates a word object for the Learning Game
  * which has two instance variables: data and category.
+ *
+ * @author BluePuddleCat
+ * @version 11/3/18
+ * Written for HackHolyoke 2018
  *
  */
 public class Word {
