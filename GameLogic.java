@@ -5,7 +5,7 @@
  * the user's choice is correct, the score is updated.
  * 
  * @author BluePuddleCat
- * @version 11/2/18 Written for HackHolyoke 2018
+ * @version 11/3/18 Written for HackHolyoke 2018
  *
  */
 public class GameLogic {
