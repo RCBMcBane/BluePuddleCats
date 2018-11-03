@@ -33,9 +33,11 @@ public class GameController extends JPanel implements ActionListener {
 	private String version;
 	private JButton catgry1, catgry2, catgry3;
 	private boolean correct;
-	Font font = new Font("Comic Sans MS", Font.BOLD, 30);
-	Font commentFont = new Font("Comic Sans MS", Font.BOLD, 24);
-	Font instructionFont = new Font("Comic Sans MS", Font.BOLD, 14);
+	Font font = new Font("Comic Sans MS", Font.PLAIN, 24);
+	Font buttonFont = new Font("Comic Sans MS", Font.PLAIN, 20);
+	Font wordFont  = new Font("Comic Sans MS", Font.BOLD, 30);
+	Font commentFont = new Font("Comic Sans MS", Font.PLAIN, 24);
+	Font instructionFont = new Font("Comic Sans MS", Font.PLAIN, 14);
 	Color background = new Color(175, 206, 250);
 
 	/**
@@ -102,9 +104,9 @@ public class GameController extends JPanel implements ActionListener {
 		catgry1.setBackground(new Color(172, 236, 169));
 		catgry2.setBackground(new Color(255, 200, 200));
 		catgry3.setBackground(new Color(235, 235, 194));
-		catgry1.setFont(font);
-		catgry2.setFont(font);
-		catgry3.setFont(font);
+		catgry1.setFont(buttonFont);
+		catgry2.setFont(buttonFont);
+		catgry3.setFont(buttonFont);
 		catgry1.addActionListener(this);
 		catgry2.addActionListener(this);
 		catgry3.addActionListener(this);
@@ -129,7 +131,7 @@ public class GameController extends JPanel implements ActionListener {
 		JPanel wordCommentPane = new JPanel(new GridLayout(2, 1));
 		wordCommentPane.setBackground(background);
 		JLabel wordLabel = new JLabel(logic.getWord().getData(), SwingConstants.CENTER);
-		wordLabel.setFont(font);
+		wordLabel.setFont(wordFont);
 		wordCommentPane.add(wordLabel);
 
 		// display comment or instructions
