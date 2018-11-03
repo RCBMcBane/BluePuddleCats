@@ -110,8 +110,8 @@ public class GameController extends JPanel implements ActionListener {
 			catgry2 = new JButton("Recycle");
 			catgry3 = new JButton("Compost");
 		}
-		catgry1.setBackground(green);
-		catgry2.setBackground(red);
+		catgry1.setBackground(red);
+		catgry2.setBackground(green);
 		catgry3.setBackground(yellow);
 		catgry1.setFont(buttonFont);
 		catgry2.setFont(buttonFont);
