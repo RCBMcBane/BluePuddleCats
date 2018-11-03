@@ -18,6 +18,7 @@ import javax.swing.JLabel;
  */
 public class GameController extends JPanel implements ActionListener {
 	private GameLogic logic;
+	private boolean gameStart;
 	private JButton catgry1, catgry2, catgry3;
 	private boolean correct;
 
@@ -25,10 +26,11 @@ public class GameController extends JPanel implements ActionListener {
 	 * constructor
 	 */
 	public GameController() {
-		super(new GridLayout(3, 1));
+		super(new BorderLayout());
 		setFocusable(true);
 		logic = new GameLogic();
 		logic.updateWord();
+		gameStart = false;
 		createView();
 	}
 
@@ -36,38 +38,20 @@ public class GameController extends JPanel implements ActionListener {
 	 * createView method creates all the elements that need to go into the frame for
 	 * the game to run.
 	 */
-	public void createView() {
-		// display category and score
-		JPanel categoryScorePane = new JPanel(new GridLayout(2, 1));
-		add(categoryScorePane);
-		categoryScorePane.add(createCategoryView());
-		categoryScorePane.add(createScoreView());
-		// display word
-		add(displayWord());
-		// display instruction
-		add(displayInstructions());
-	}
-
-	/**
-	 * this method refreshes the display after the user had performed some action
-	 * 
-	 * @param wasCorrect
-	 *            boolean, true if user's answer was correct
-	 */
-	public void refreshDisplay() {
-		// update word and display
+	private void createView() {
+		displayCategoryScore();
 		displayWord();
-		// update score
-		createScoreView();
-		// update comment
-		createCommentView();
+		// display instruction
+		displayComment(gameStart);
 	}
 
 	/**
 	 * createCategoryView method creates the three buttons that are the possible
 	 * categories for the word
 	 */
-	private JPanel createCategoryView() {
+	private void displayCategoryScore() {
+		JPanel categoryScorePane = new JPanel(new GridLayout(2, 1));
+		//create category view
 		JPanel catPanel = new JPanel(new GridLayout(1, 3));
 		catgry1 = new JButton("Noun");
 		catgry1.addActionListener(this);
@@ -78,27 +62,24 @@ public class GameController extends JPanel implements ActionListener {
 		catPanel.add(catgry1);
 		catPanel.add(catgry2);
 		catPanel.add(catgry3);
-		revalidate();
-		return catPanel;
-	}
-
-	/**
-	 * this method create score label
-	 */
-	private JLabel createScoreView() {
-		String score = "Score: " +String.valueOf(logic.getScore());
+		//create score view
+		String score = "Score: " + String.valueOf(logic.getScore());
 		JLabel scoreLabel = new JLabel(score, SwingConstants.CENTER);
+		add(categoryScorePane, BorderLayout.NORTH);
+		categoryScorePane.add(catPanel);
+		categoryScorePane.add(scoreLabel);
 		revalidate();
-		return scoreLabel;
 	}
 
 	/**
 	 * this method displays the new word for the user to guess
 	 */
-	private JLabel displayWord() {
+	private void displayWord() {
+		JPanel wordPane = new JPanel(new BorderLayout());
 		JLabel wordLabel = new JLabel(logic.getWord().getData(), SwingConstants.CENTER);
+		wordPane.add(wordLabel,BorderLayout.CENTER);
+		add(wordPane, BorderLayout.CENTER);
 		revalidate();
-		return wordLabel;
 	}
 
 	/**
@@ -107,11 +88,26 @@ public class GameController extends JPanel implements ActionListener {
 	 *            comments after the user has guessed they are different if the used
 	 *            got the answer right or wrong
 	 */
-	private JLabel createCommentView() {
-		String comment = getComment(correct);
-		JLabel commentLabel = new JLabel(comment, SwingConstants.CENTER);
+	private void displayComment(boolean gameOn) {
+		JPanel commentPane = new JPanel(new BorderLayout());
+		if (gameOn) {
+			//after user has clicked
+			//display comment
+			String comment = getComment(correct);
+			JLabel commentLabel = new JLabel(comment, SwingConstants.CENTER);
+			commentPane.add(commentLabel, BorderLayout.CENTER);
+		} else {
+			//at the beginning on the game, before any clicks
+			//display instructions
+			String instructions = "<html>How to Play: <br/> A word will appear on the screen.<br/>You must decide if it is a noun, a verb, "
+					+ "or an adjective.<br/>When you have decided, click the corresponding button at the top.<br/>"
+					+ "If you get it right, you will get a point!<br/>Once you have clicked, a new word will appear."
+					+ "<br/>Try to get through all the words with the highest score possible!</html>";
+			JLabel instructionLabel = new JLabel(instructions, SwingConstants.CENTER);
+			commentPane.add(instructionLabel, BorderLayout.CENTER);
+		}
+		add(commentPane, BorderLayout.SOUTH);
 		revalidate();
-		return commentLabel;
 	}
 
 	/**
@@ -128,18 +124,6 @@ public class GameController extends JPanel implements ActionListener {
 	}
 
 	/**
-	 * This method displays instructions for playing the partOfSpeech game.
-	 */
-	private JLabel displayInstructions() {
-		String instructions = "A word will appear on the screen.\nYou must decide if it is a noun, a verb, "
-				+ "or an adjective.\nWhen you have decided, click the corresponding button"
-				+ " at the top.\nIf you get it right, you will get a point!\nOnce you have clicked,"
-				+ " a new word will appear.\nTry to get through all the words with the highest " + "score possible!";
-		JLabel instructionLabel = new JLabel(instructions);
-		return instructionLabel;
-	}
-
-	/**
 	 * this method performs the main game play of the Language Game
 	 * 
 	 * @param e
@@ -148,7 +132,8 @@ public class GameController extends JPanel implements ActionListener {
 		String text = ((AbstractButton) e.getSource()).getText();
 		// compare selected category with the original
 		correct = logic.compare(text);
-		//refresh display
-		refreshDisplay();
+		logic.updateWord();
+		gameStart = true;
+		// refresh display
+		createView();
 	}
-}
