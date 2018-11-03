@@ -34,15 +34,15 @@ public class GameController extends JPanel implements ActionListener {
 	private String version;
 	private JButton catgry1, catgry2, catgry3;
 	private boolean correct;
-	Font font = new Font("Comic Sans MS", Font.PLAIN, 24);
-	Font buttonFont = new Font("Comic Sans MS", Font.PLAIN, 20);
-	Font wordFont  = new Font("Comic Sans MS", Font.BOLD, 30);
-	Font commentFont = new Font("Comic Sans MS", Font.PLAIN, 24);
-	Font instructionFont = new Font("Comic Sans MS", Font.PLAIN, 14);
-	Color background = new Color(175, 206, 250);
-	Color red = new Color(255, 200, 200);
-	Color green = new Color(172, 236, 169);
-	Color yellow = new Color(235, 235, 194);
+	private Font font = new Font("Comic Sans MS", Font.PLAIN, 24);
+	private Font buttonFont = new Font("Comic Sans MS", Font.PLAIN, 20);
+	private Font wordFont  = new Font("Comic Sans MS", Font.BOLD, 30);
+	private Font commentFont = new Font("Comic Sans MS", Font.PLAIN, 24);
+	private Font instructionFont = new Font("Comic Sans MS", Font.PLAIN, 14);
+	private Color background = new Color(175, 206, 250);
+	private Color red = new Color(255, 200, 200);
+	private Color green = new Color(172, 236, 169);
+	private Color yellow = new Color(235, 235, 194);
 
 	/**
 	 * constructor
@@ -196,7 +196,7 @@ public class GameController extends JPanel implements ActionListener {
 		add(skipEndPane,BorderLayout.SOUTH);
 	}
 
-/**
+	/**
 	 * end game and display final score
 	 * 
 	 * @return true if score is more than half attempted names
@@ -207,6 +207,10 @@ public class GameController extends JPanel implements ActionListener {
 		JLabel finalScoreLabel = new JLabel(finalScore, SwingConstants.CENTER);
 		finalScoreLabel.setFont(commentFont);
 		add(finalScoreLabel, BorderLayout.CENTER);
+		JButton restart = new JButton("Restart");
+		restart.addActionListener(this);
+		restart.setFont(buttonFont);
+		add(restart, BorderLayout.SOUTH);
 		revalidate();
 		return (logic.getScore() >= logic.getTimesAttempted() / 2);
 	}
@@ -267,6 +271,10 @@ public class GameController extends JPanel implements ActionListener {
 		} else if (text.equals("End")) {
 			if (endGame())
 				sound("cheer");
+		}
+		else if (text.equals("Restart")) {
+			removeAll();
+			displayVersion();
 		}
 		// compare selected category with the original
 		else {
