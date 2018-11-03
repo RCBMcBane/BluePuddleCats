@@ -10,22 +10,22 @@ public class Word {
 	String data; //the actual word
 	String category; //the category the word is in
 	
-  /**
-	 * constructor
-	 */
+	/**
+ 	 * constructor
+ 	 */
 	public Word() {
 		//default constructor
 	}
 	
-  /**
-	 * @param data String
+  	/**
+	 * @param data String, word itself
 	 * setter method for Data
 	 */
 	public void setData(String data) {
 		this.data = data;
 	}
 	
-  /**
+  	/**
 	 * getter method for Data
 	 * @return String, data in Word
 	 */
@@ -33,7 +33,7 @@ public class Word {
 		return this.data;
 	}
 	
-  /**
+ 	 /**
 	 * @param category String, category of word
 	 * setter method for Category
 	 */
@@ -41,7 +41,7 @@ public class Word {
 		this.category = category;
 	}
 	
-  /**
+  	/**
 	 * getter method for category
 	 * @return String category of word
 	 */
