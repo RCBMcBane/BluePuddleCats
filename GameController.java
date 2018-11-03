@@ -14,7 +14,6 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.JLabel;
 import javax.swing.JFrame;
-
 /**
  * GameController class initiates game and display in GUI
  * 
@@ -28,6 +27,10 @@ public class GameController extends JPanel implements ActionListener {
 	private String version;
 	private JButton catgry1, catgry2, catgry3;
 	private boolean correct;
+	Font font = new Font("Comic Sans MS", Font.BOLD, 30);
+	Font commentFont = new Font("Comic Sans MS", Font.BOLD, 20);
+	Font instructionFont = new Font("Comic Sans MS", Font.BOLD, 14);
+	Color background = new Color(235, 235, 194);
 
 	/**
 	 * constructor
@@ -46,8 +49,12 @@ public class GameController extends JPanel implements ActionListener {
 		JPanel versionPane = new JPanel(new GridLayout(1, 2));
 		// create buttons
 		JButton wordVersion = new JButton("Word Game");
+		wordVersion.setFont(font);
+		wordVersion.setBackground(new Color(175, 206, 250));
 		wordVersion.addActionListener(this);
 		JButton recycleVersion = new JButton("Recycle Game");
+		recycleVersion.setFont(font);
+		recycleVersion.setBackground(new Color(172, 236, 169));
 		recycleVersion.addActionListener(this);
 		// add them to panels
 		versionPane.add(wordVersion);
@@ -70,9 +77,10 @@ public class GameController extends JPanel implements ActionListener {
 	 * categories for the word
 	 */
 	private void displayCategoryScore() {
-		Font font = new Font("Comic Sans MS", Font.BOLD, 30);
+		//Font font = new Font("Comic Sans MS", Font.BOLD, 30);
 		
 		JPanel categoryScorePane = new JPanel(new GridLayout(2, 1));
+		categoryScorePane.setBackground(background);
 		// create category view
 		JPanel catPanel = new JPanel(new GridLayout(1, 3));
 		if (version.equals("Word Game")) {
@@ -84,9 +92,9 @@ public class GameController extends JPanel implements ActionListener {
 			catgry2 = new JButton("Recycle");
 			catgry3 = new JButton("Compost");
 		}
-		catgry1.setBackground(new Color(225, 225, 180));
+		catgry1.setBackground(new Color(172, 236, 169));
 		catgry2.setBackground(new Color(255, 200, 200));
-		catgry3.setBackground(new Color(135, 206, 250));
+		catgry3.setBackground(new Color(175, 206, 250));
 		catgry1.setFont(font);
 		catgry2.setFont(font);
 		catgry3.setFont(font);
@@ -112,11 +120,14 @@ public class GameController extends JPanel implements ActionListener {
 	private void displayWordComment() {
 		// display word
 		JPanel wordCommentPane = new JPanel(new GridLayout(2, 1));
+		wordCommentPane.setBackground(background);
 		JLabel wordLabel = new JLabel(logic.getWord().getData(), SwingConstants.CENTER);
+		wordLabel.setFont(font);
 		wordCommentPane.add(wordLabel);
 
 		// display comment or instructions
 		JPanel commentPane = new JPanel(new BorderLayout());
+		commentPane.setBackground(background);
 		if (gameStart) {
 			// after user has clicked
 			// display comment
@@ -127,6 +138,7 @@ public class GameController extends JPanel implements ActionListener {
 				comment = "Good try, but that is not the right answer.";
 			}
 			JLabel commentLabel = new JLabel(comment, SwingConstants.CENTER);
+			commentLabel.setFont(commentFont);
 			commentPane.add(commentLabel, BorderLayout.CENTER);
 		} else {
 			// at the beginning on the game, before any clicks
@@ -136,6 +148,7 @@ public class GameController extends JPanel implements ActionListener {
 					+ "If you get it right, you will get a point!<br/>Once you have clicked, a new word will appear."
 					+ "<br/>Try to get through all the words with the highest score possible!</html>";
 			JLabel instructionLabel = new JLabel(instructions, SwingConstants.CENTER);
+			instructionLabel.setFont(instructionFont);
 			commentPane.add(instructionLabel, BorderLayout.CENTER);
 		}
 		wordCommentPane.add(commentPane);
@@ -148,10 +161,18 @@ public class GameController extends JPanel implements ActionListener {
 	 */
 	private void displaySkipEnd() {
 		JPanel skipEndPane = new JPanel(new GridLayout(1, 2));
+		//skip button
 		JButton skip = new JButton("Skip");
+		skip.setFont(font);
+		skip.setBackground(new Color(175, 206, 250));
 		skip.addActionListener(this);
+		//end button
 		JButton end = new JButton("End");
+		end.setFont(font);
+		end.setBackground(new Color(172, 236, 169));
 		end.addActionListener(this);
+		
+		
 		skipEndPane.add(skip);
 		skipEndPane.add(end);
 		add(skipEndPane,BorderLayout.SOUTH);
@@ -161,6 +182,7 @@ public class GameController extends JPanel implements ActionListener {
 		removeAll();
 		String finalScore = "Your Final Score is " + logic.getScore() + " / " + logic.getTimesAttempted();
 		JLabel finalScoreLabel = new JLabel(finalScore,  SwingConstants.CENTER);
+		finalScoreLabel.setFont(commentFont);
 		add(finalScoreLabel, BorderLayout.CENTER);
 		revalidate();
 	}
@@ -203,3 +225,4 @@ public class GameController extends JPanel implements ActionListener {
 		}
 	}
 }
+
