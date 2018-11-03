@@ -199,17 +199,23 @@ public class GameController extends JPanel implements ActionListener {
 	/**
 	 * play sound effect for buttons
 	 */
-	private void sound() {
+	private void sound(String kind) {
 		try {
-			// Open an audio input stream.
-			File soundFile = new File("button.wav"); 
+			File soundFile = null;
+			if (kind.equals("button")) {
+				// Open an audio input stream.
+				soundFile = new File("button.wav");
+			} else if (kind.equals("cheer")) {
+				// Open an audio input stream.
+				soundFile = new File("cheer.wav");
+			}
 			AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
 			// Get a sound clip resource.
 			Clip clip = AudioSystem.getClip();
 			// Open audio clip and load samples from the audio input stream.
 			clip.open(audioIn);
 			clip.start();
-			
+
 		} catch (UnsupportedAudioFileException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -218,7 +224,7 @@ public class GameController extends JPanel implements ActionListener {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * this method performs the main game play of the Language Game
 	 * 
@@ -226,7 +232,7 @@ public class GameController extends JPanel implements ActionListener {
 	 */
 	public void actionPerformed(ActionEvent e) {
 		String text = ((AbstractButton) e.getSource()).getText();
-		sound();
+		sound("button");
 		// display different versions of game
 		if (text.equals("Word Game")) {
 			version = "Word Game";
@@ -240,13 +246,12 @@ public class GameController extends JPanel implements ActionListener {
 			logic.updateWord();
 			removeAll();
 			createView();
-		}
-		else if (text.equals("Skip")) {
+		} else if (text.equals("Skip")) {
 			logic.updateWord();
 			createView();
-		}
-		else if (text.equals("End")) {
-			endGame();
+		} else if (text.equals("End")) {
+			if (endGame())
+				sound("cheer");
 		}
 		// compare selected category with the original
 		else {
