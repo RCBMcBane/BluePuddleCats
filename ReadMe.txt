@@ -1,4 +1,6 @@
 Author: BluePuddleCats
+Members: Amanda Neelapriyantha, Jackie Park, Rebekah McBane, Shan Jiang
+
 Version: 11/3/18
 Written for HackHolyoke 2018
 
