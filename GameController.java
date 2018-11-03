@@ -18,6 +18,7 @@ public class GameController extends JPanel implements ActionListener{
 	boolean gameHasBegun = false;
 	GameLogic logic;
 	String comment;
+	Word word = new Word();
 	JButton catgry1 = new JButton("Noun");
 	JButton catgry2 = new JButton("Verb");
 	JButton catgry3 = new JButton("Adjective");
@@ -27,6 +28,7 @@ public class GameController extends JPanel implements ActionListener{
 	 */
 	public GameController() {
 		logic = new GameLogic();
+		word = logic.updateWord();
 		createView();
 	}
 	/**
