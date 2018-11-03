@@ -25,7 +25,7 @@ import javax.swing.JFrame;
  * GameController class initiates game and display in GUI
  * 
  * @author BluePuddleCats
- * @version 11/2/18
+ * @version 11/3/18
  *
  */
 public class GameController extends JPanel implements ActionListener {
