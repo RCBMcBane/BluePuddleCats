@@ -2,10 +2,13 @@
  * @author BluePuddleCat
  * @version 11/2/18
  * Written for HackHolyoke 2018
+ * This class creates a word object for the Learning Game
+ * which has two instance variables: data and category.
  *
  */
 public class Word {
-	String data, category;
+	String data; //the actual word
+	String category; //the category the word is in
 	
   /**
 	 * constructor
@@ -17,14 +20,14 @@ public class Word {
 	
   /**
 	 * @param data String
-	 * setData
+	 * setter method for Data
 	 */
 	public void setData(String data) {
 		this.data = data;
 	}
 	
   /**
-	 * getData
+	 * getter method for Data
 	 * @return String, data in Word
 	 */
 	public String getData() {
@@ -33,14 +36,15 @@ public class Word {
 	
   /**
 	 * @param category String, category of word
-	 * setCategory
+	 * setter method for Category
 	 */
 	public void setCategory(String category) {
 		this.category = category;
 	}
 	
   /**
-	 * getCategory
+	 * getter method for category
+	 * @return String category of word
 	 */
 	public String getCategory() {
 		return this.category;
