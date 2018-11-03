@@ -48,6 +48,11 @@ public class GameController extends JPanel implements ActionListener {
 		setFocusable(true);
 		gameStart = false;
 		setBackground(background);
+		try {
+			UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		displayVersion();
 	}
 
