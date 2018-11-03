@@ -1,383 +1,383 @@
 <word_library>
 //Nouns
 
-	<word category= "noun">
-	<name>Cat</name>
+	<word category="noun">
+		<name>Cat</name>
 	</word>
 
-	<word category= "noun">
-	<name>Dog</name>
+	<word category="noun">
+		<name>Dog</name>
 	</word>
 
-	<word category= "noun">
-	<name>Bird</name>
+	<word category="noun">
+		<name>Bird</name>
 	</word>
 
-	<word category= "noun">
-	<name>Car</name>
+	<word category="noun">
+		<name>Car</name>
 	</word>
 
-	<word category= "noun">
-	<name>Truck</name>
+	<word category="noun">
+		<name>Truck</name>
 	</word>
 
-	<word category= "noun">
-	<name>Bus</name>
-	</word>
-	
-	<word category= "noun">
-	<name>Train</name>
-	</word>
-	
-	<word category= "noun">
-	<name>Tiger</name>
-	</word>
-	
-	<word category= "noun">
-	<name>Lion</name>
-	</word>
-	
-	<word category= "noun">
-	<name>TV</name>
-	</word>
-	
-	<word category= "noun">
-	<name>Phone</name>
-	</word>
-	
-	<word category= "noun">
-	<name>Bottle</name>
+	<word category="noun">
+		<name>Bus</name>
 	</word>
 
-	<word category= "noun">
-	<name>Apple</name>
+	<word category="noun">
+		<name>Train</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Lemon</name>
+
+	<word category="noun">
+		<name>Tiger</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Pineapple</name>
+
+	<word category="noun">
+		<name>Lion</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Tree</name>
+
+	<word category="noun">
+		<name>TV</name>
 	</word>
-	
-	<word category= "noun">
-	<name>River</name>
+
+	<word category="noun">
+		<name>Phone</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Sea</name>
+
+	<word category="noun">
+		<name>Bottle</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Sand</name>
+
+	<word category="noun">
+		<name>Apple</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Ring</name>
+
+	<word category="noun">
+		<name>Lemon</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Sidewalk</name>
+
+	<word category="noun">
+		<name>Pineapple</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Teacher</name>
+
+	<word category="noun">
+		<name>Tree</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Table</name>
+
+	<word category="noun">
+		<name>River</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Plate</name>
+
+	<word category="noun">
+		<name>Sea</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Clock</name>
+
+	<word category="noun">
+		<name>Sand</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Hand</name>
+
+	<word category="noun">
+		<name>Ring</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Leg</name>
+
+	<word category="noun">
+		<name>Sidewalk</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Arm</name>
+
+	<word category="noun">
+		<name>Teacher</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Face</name>
+
+	<word category="noun">
+		<name>Table</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Towel</name>
+
+	<word category="noun">
+		<name>Plate</name>
 	</word>
-	
-	<word category= "noun">
-	<name>Cup</name>
+
+	<word category="noun">
+		<name>Clock</name>
+	</word>
+
+	<word category="noun">
+		<name>Hand</name>
+	</word>
+
+	<word category="noun">
+		<name>Leg</name>
+	</word>
+
+	<word category="noun">
+		<name>Arm</name>
+	</word>
+
+	<word category="noun">
+		<name>Face</name>
+	</word>
+
+	<word category="noun">
+		<name>Towel</name>
+	</word>
+
+	<word category="noun">
+		<name>Cup</name>
 	</word>
 	//Verbs
-	
-	<word category= "verb">
-	<name>Run</name>
+
+	<word category="verb">
+		<name>Run</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Walk</name>
+
+	<word category="verb">
+		<name>Walk</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Swim</name>
+
+	<word category="verb">
+		<name>Swim</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Jump</name>
+
+	<word category="verb">
+		<name>Jump</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Slip</name>
+
+	<word category="verb">
+		<name>Slip</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Sit</name>
+
+	<word category="verb">
+		<name>Sit</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Talk</name>
+
+	<word category="verb">
+		<name>Talk</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Hop</name>
+
+	<word category="verb">
+		<name>Hop</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Sleep</name>
+
+	<word category="verb">
+		<name>Sleep</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Shout</name>
+
+	<word category="verb">
+		<name>Shout</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Leap</name>
+
+	<word category="verb">
+		<name>Leap</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Eat</name>
+
+	<word category="verb">
+		<name>Eat</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Play</name>
+
+	<word category="verb">
+		<name>Play</name>
 	</word>
-	
-	<<word category= "verb">
-	<name>Steal</name>
+
+	<word category="verb">
+		<name>Steal</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Kick</name>
+
+	<word category="verb">
+		<name>Kick</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Move</name>
+
+	<word category="verb">
+		<name>Move</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Dance</name>
+
+	<word category="verb">
+		<name>Dance</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Tap</name>
+
+	<word category="verb">
+		<name>Tap</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Laugh</name>
+
+	<word category="verb">
+		<name>Laugh</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Roll</name>
+
+	<word category="verb">
+		<name>Roll</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Rub</name>
+
+	<word category="verb">
+		<name>Rub</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Bend</name>
+
+	<word category="verb">
+		<name>Bend</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Type</name>
+
+	<word category="verb">
+		<name>Type</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Click</name>
+
+	<word category="verb">
+		<name>Click</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Lick</name>
+
+	<word category="verb">
+		<name>Lick</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Wipe</name>
+
+	<word category="verb">
+		<name>Wipe</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Push</name>
+
+	<word category="verb">
+		<name>Push</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Shove</name>
+
+	<word category="verb">
+		<name>Shove</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Skip</name>
+
+	<word category="verb">
+		<name>Skip</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Hop</name>
+
+	<word category="verb">
+		<name>Hop</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Spin</name>
+
+	<word category="verb">
+		<name>Spin</name>
 	</word>
-	
-	<word category= "verb">
-	<name>Wiggle</name>
+
+	<word category="verb">
+		<name>Wiggle</name>
 	</word>
-	
+
 	//Adjectives
-	
-	<word category= "adjective">
-	<name>Sweet</name>
+
+	<word category="adjective">
+		<name>Sweet</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Sour</name>
+
+	<word category="adjective">
+		<name>Sour</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Spicy</name>
+
+	<word category="adjective">
+		<name>Spicy</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Nice</name>
+
+	<word category="adjective">
+		<name>Nice</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Kind</name>
+
+	<word category="adjective">
+		<name>Kind</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Mean</name>
+
+	<word category="adjective">
+		<name>Mean</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Brave</name>
+
+	<word category="adjective">
+		<name>Brave</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Calm</name>
+
+	<word category="adjective">
+		<name>Calm</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Big</name>
+
+	<word category="adjective">
+		<name>Big</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Happy</name>
+
+	<word category="adjective">
+		<name>Happy</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Mad</name>
+
+	<word category="adjective">
+		<name>Mad</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Pretty</name>
+
+	<word category="adjective">
+		<name>Pretty</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Little</name>
+
+	<word category="adjective">
+		<name>Little</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Silly</name>
+
+	<word category="adjective">
+		<name>Silly</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Fancy</name>
+
+	<word category="adjective">
+		<name>Fancy</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Clean</name>
+
+	<word category="adjective">
+		<name>Clean</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Wet</name>
+
+	<word category="adjective">
+		<name>Wet</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Hot</name>
+
+	<word category="adjective">
+		<name>Hot</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Dry</name>
+
+	<word category="adjective">
+		<name>Dry</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Yellow</name>
+
+	<word category="adjective">
+		<name>Yellow</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Blue</name>
+
+	<word category="adjective">
+		<name>Blue</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Red</name>
+
+	<word category="adjective">
+		<name>Red</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Green</name>
+
+	<word category="adjective">
+		<name>Green</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Pink</name>
+
+	<word category="adjective">
+		<name>Pink</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Black</name>
+
+	<word category="adjective">
+		<name>Black</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>White</name>
+
+	<word category="adjective">
+		<name>White</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Cold</name>
+
+	<word category="adjective">
+		<name>Cold</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Dirty</name>
+
+	<word category="adjective">
+		<name>Dirty</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Soft</name>
+
+	<word category="adjective">
+		<name>Soft</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Hard</name>
+
+	<word category="adjective">
+		<name>Hard</name>
 	</word>
-	
-	<word category= "adjective">
-	<name>Gentle</name>
+
+	<word category="adjective">
+		<name>Gentle</name>
 	</word>
 
 </word_library>
