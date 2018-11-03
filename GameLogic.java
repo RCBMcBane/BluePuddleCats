@@ -10,14 +10,16 @@
  */
 public class GameLogic {
 
-	// global variables
+	// instance variables
 	private Library library;
 	private Word word;
 	private int score;
 	private int timesAttempted;
 
 	/**
-	 * constructor initiates new instance of WordLibrary, sets score to 0.
+	 * @param version String, which version of the game is being played
+	 * constructor initiates new instance of WordLibrary, 
+	 * sets score and times attemptedto 0.
 	 */
 	public GameLogic(String version) {
 		library = new Library(version);
@@ -26,8 +28,8 @@ public class GameLogic {
 	}
 
 	/**
-	 * 
-	 * @return existing word
+	 * getter method for word
+	 * @return existing word, Word object
 	 */
 	public Word getWord() {
 		return word;
@@ -35,8 +37,7 @@ public class GameLogic {
 
 	/**
 	 * gets random word from WordLibrary
-	 * 
-	 * @return new word from WordLibrary
+	 * @return new word from WordLibrary, Word object
 	 */
 	public Word updateWord() {
 		word = library.getRandomWord();
@@ -44,8 +45,8 @@ public class GameLogic {
 	}
 
 	/**
-	 * get score
-	 * @return score
+	 * getter method for score
+	 * @return score, int
 	 */
 	public int getScore() {
 		return score;
@@ -59,23 +60,22 @@ public class GameLogic {
 	}
 
 	/**
-	 * get attempted times
-	 * @return attempted times
+	 * getter method for attempted times
+	 * @return attempted times, int
 	 */
 	public int getTimesAttempted() {
 		return timesAttempted;
 	}
 
 	/**
-	 * compare given category with the original category
+	 * compare guessed category with the correct category of the word
 	 * 
-	 * @param Category
-	 *            the category the user chose in the game for the word
-	 * @return whether that word belongs in the category or not
+	 * @param guessedCategory, String, the category the user chose in the game
+	 * @return boolean, true is guess was correct
 	 */
-	public boolean compare(String Category) {
+	public boolean compare(String guessedCategory) {
 		String category = word.getCategory();
-		boolean correct = category.equals(Category);
+		boolean correct = category.equals(guessedCategory);
 		if (correct)
 			score++;
 		timesAttempted++;
