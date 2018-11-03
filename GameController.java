@@ -16,7 +16,7 @@ import javax.swing.JLabel;
  */
 public class GameController extends JPanel implements ActionListener{
 	boolean gameHasBegun = false;
-	Logic logic;
+	GameLogic logic;
 	String comment;
 	JButton catgry1 = new JButton("Noun");
 	JButton catgry2 = new JButton("Verb");
