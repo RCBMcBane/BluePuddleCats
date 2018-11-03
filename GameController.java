@@ -40,6 +40,9 @@ public class GameController extends JPanel implements ActionListener {
 	Font commentFont = new Font("Comic Sans MS", Font.PLAIN, 24);
 	Font instructionFont = new Font("Comic Sans MS", Font.PLAIN, 14);
 	Color background = new Color(175, 206, 250);
+	Color red = new Color(255, 200, 200);
+	Color green = new Color(172, 236, 169);
+	Color yellow = new Color(235, 235, 194);
 
 	/**
 	 * constructor
@@ -65,11 +68,11 @@ public class GameController extends JPanel implements ActionListener {
 		// create buttons
 		JButton wordVersion = new JButton("Word Game");
 		wordVersion.setFont(font);
-		wordVersion.setBackground(new Color(175, 206, 250));
+		wordVersion.setBackground(red);
 		wordVersion.addActionListener(this);
 		JButton recycleVersion = new JButton("Recycle Game");
 		recycleVersion.setFont(font);
-		recycleVersion.setBackground(new Color(172, 236, 169));
+		recycleVersion.setBackground(green);
 		recycleVersion.addActionListener(this);
 		// add them to panels
 		versionPane.add(wordVersion);
@@ -107,9 +110,9 @@ public class GameController extends JPanel implements ActionListener {
 			catgry2 = new JButton("Recycle");
 			catgry3 = new JButton("Compost");
 		}
-		catgry1.setBackground(new Color(172, 236, 169));
-		catgry2.setBackground(new Color(255, 200, 200));
-		catgry3.setBackground(new Color(235, 235, 194));
+		catgry1.setBackground(green);
+		catgry2.setBackground(red);
+		catgry3.setBackground(yellow);
 		catgry1.setFont(buttonFont);
 		catgry2.setFont(buttonFont);
 		catgry3.setFont(buttonFont);
@@ -184,7 +187,7 @@ public class GameController extends JPanel implements ActionListener {
 		//end button
 		JButton end = new JButton("End");
 		end.setFont(font);
-		end.setBackground(new Color(172, 236, 169));
+		end.setBackground(green);
 		end.addActionListener(this);
 		
 		
