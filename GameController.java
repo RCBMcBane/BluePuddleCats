@@ -27,6 +27,7 @@ public class GameController extends JPanel implements ActionListener{
 	 * constructor
 	 */
 	public GameController() {
+		super();
 		logic = new GameLogic();
 		word = logic.updateWord();
 		createView();
@@ -36,14 +37,11 @@ public class GameController extends JPanel implements ActionListener{
 	 * that need to go into the frame for the game to run.
 	 */
 	public void createView() {
-		// use a border layout
-		super(new BorderLayout()); //this gives me an error in Eclipse 
-		//"constructor call must be the first statement in a constructor"
-		
 		createCategoryView();
 		createScoreView();
 		displayWord();
 		displayInstructions();
+		
 		}
 	/**
 	 * this method refreshes the display after the user had performed some action
@@ -88,7 +86,7 @@ public class GameController extends JPanel implements ActionListener{
 	 */
 	//THIS METHOD NEEDS HELP, I DON'T KNOW WHAT TO DO WITH JALABEL
 	public void displayWord() {
-		String word = logic.getword();
+		String word = logic.getWord().getData();
 		JLabel printWord = new JLabel(word);
 	}
 	/**
@@ -130,6 +128,7 @@ public class GameController extends JPanel implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		boolean wasCorrect; //if the answer was correct
 		String category; //the answer that the user chose
+		
 		//compare selected category with the original
 		wasCorrect = logic.compare(category);
 		//(do we need to) update score, etc.?
