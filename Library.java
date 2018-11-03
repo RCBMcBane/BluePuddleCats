@@ -72,7 +72,8 @@ public class Library {
 	private void parseNode(Node node) {
 
 		if (node.getNodeType() == Node.ELEMENT_NODE) {
-			if (node.getNodeName().equals("word_library") && node.hasChildNodes()) {
+			if (node.getNodeName().equals("word_library")
+					|| node.getNodeName().equals("recycle_library") && node.hasChildNodes()) {
 				// for loop through all first-child nodes
 				NodeList nodeList = node.getChildNodes();
 				for (int i = 0; i < nodeList.getLength(); i++) {
@@ -85,50 +86,7 @@ public class Library {
 						String nodeName = firstChildNode.getNodeName();
 						if (nodeName.equals("word") && firstChildNode.hasChildNodes()) {
 							Word newWord = new Word();
-							if (currentElt.getAttribute("category").equals("noun"))
-								newWord.setCategory("Noun");
-							else if (currentElt.getAttribute("category").equals("verb"))
-								newWord.setCategory("Verb");
-							else if (currentElt.getAttribute("category").equals("adjective"))
-								newWord.setCategory("Adjective");
-
-							// for loop through second-child nodes
-							NodeList nodeList2 = firstChildNode.getChildNodes();
-							for (int j = 0; j < nodeList2.getLength(); j++) {
-								Node secondChildNode = nodeList2.item(j);
-								// check if child node is an element
-								if (secondChildNode.getNodeType() == Node.ELEMENT_NODE) {
-									// check if the node is name
-									String nodeName2 = secondChildNode.getNodeName();
-									if (nodeName2.equals("name")) {
-										newWord.setData(secondChildNode.getTextContent());
-										library.add(newWord);
-									}
-								}
-							}
-						}
-					}
-				}
-			} else if (node.getNodeName().equals("recycle_library") && node.hasChildNodes()) {
-				// for loop through all first-child nodes
-				NodeList nodeList = node.getChildNodes();
-				for (int i = 0; i < nodeList.getLength(); i++) {
-					Node firstChildNode = nodeList.item(i);
-					// check if child node is an element
-					if (firstChildNode.getNodeType() == Node.ELEMENT_NODE) {
-						// rename element node
-						Element currentElt = (Element) firstChildNode;
-						// check if the node is word
-						String nodeName = firstChildNode.getNodeName();
-						if (nodeName.equals("word") && firstChildNode.hasChildNodes()) {
-							Word newWord = new Word();
-							if (currentElt.getAttribute("category").equals("trash"))
-								newWord.setCategory("Trash");
-							else if (currentElt.getAttribute("category").equals("recycle"))
-								newWord.setCategory("Recycle");
-							else if (currentElt.getAttribute("category").equals("compost"))
-								newWord.setCategory("Compost");
-
+							newWord.setCategory(currentElt.getAttribute("category"));
 							// for loop through second-child nodes
 							NodeList nodeList2 = firstChildNode.getChildNodes();
 							for (int j = 0; j < nodeList2.getLength(); j++) {
