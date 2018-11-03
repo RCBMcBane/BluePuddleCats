@@ -14,8 +14,7 @@ public class Word {
 	 * constructor
 	 */
 	public Word() {
-		this.data = "";
-		this.category = "";
+		//default constructor
 	}
 	
   /**
