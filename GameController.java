@@ -64,7 +64,8 @@ public class GameController extends JPanel implements ActionListener {
 	 * categories for the word
 	 */
 	private void displayCategoryScore() {
-
+		Font font = new Font("Comic Sans MS", Font.BOLD, 30);
+		
 		JPanel categoryScorePane = new JPanel(new GridLayout(2, 1));
 		// create category view
 		JPanel catPanel = new JPanel(new GridLayout(1, 3));
@@ -77,6 +78,12 @@ public class GameController extends JPanel implements ActionListener {
 			catgry2 = new JButton("Recycle");
 			catgry3 = new JButton("Compost");
 		}
+		catgry1.setBackground(new Color(225, 225, 180));
+		catgry2.setBackground(new Color(255, 200, 200));
+		catgry3.setBackground(new Color(135, 206, 250));
+		catgry1.setFont(font);
+		catgry2.setFont(font);
+		catgry3.setFont(font);
 		catgry1.addActionListener(this);
 		catgry2.addActionListener(this);
 		catgry3.addActionListener(this);
@@ -86,6 +93,7 @@ public class GameController extends JPanel implements ActionListener {
 		// create score view
 		String score = "Score: " + String.valueOf(logic.getScore());
 		JLabel scoreLabel = new JLabel(score, SwingConstants.CENTER);
+		scoreLabel.setFont(font);
 		add(categoryScorePane, BorderLayout.NORTH);
 		categoryScorePane.add(catPanel);
 		categoryScorePane.add(scoreLabel);
