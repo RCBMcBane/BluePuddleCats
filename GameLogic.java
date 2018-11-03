@@ -1,6 +1,12 @@
 
 
 /**
+ * Creates an instance of WordLibrary and generates
+ * random words from it. The category the user chooses in the game
+ * is compared to the category belonging to the word, and whether the 
+ * user's choice is correct or not is returned. If the user's choice is correct,
+ * the score is updated.
+ * 
  * @author BluePuddleCat
  * @version 11/2/18
  * Written for HackHolyoke 2018
