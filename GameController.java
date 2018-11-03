@@ -39,6 +39,7 @@ public class GameController extends JPanel implements ActionListener {
 		super(new BorderLayout());
 		setFocusable(true);
 		gameStart = false;
+		setBackground(background);
 		displayVersion();
 	}
 
