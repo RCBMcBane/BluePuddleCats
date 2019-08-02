@@ -1,4 +1,4 @@
-Author: BluePuddleCats
+#BluePuddleCats
 Members: Amanda Neelapriyantha, Jackie Park, Rebekah McBane, Shan Jiang
 
 Version: 11/3/18
